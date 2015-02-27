@@ -1,11 +1,69 @@
-<link rel="stylesheet" type="text/css" href="<?template?>css/bootstrap.css<?/?>" />
+<link rel="stylesheet" type="text/css" href="<?template?>css/jcalculator.css<?/?>" />
+<link rel="stylesheet" type="text/css" href="<?template?>css/style.css<?/?>" />
+<script type="text/javascript" src="<?template?>js/jcalculator.js<?/?>"></script>
+<script language="javascript" type="text/javascript">
+      $(document).ready(function() { 
+
+        $('#1__n_2_frame_form_calculator').calculator();
+      });
+
+    
+    </script>
 <style>
-body{
-/*	background-image: url('./templates/img/background1.jpg');
-	background-size: 100%;*/
+.jcalculator {
+    background: none repeat scroll 0 0 #232323;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    display: none;
+    font-family: Helvetica,Arial,Verdana,sans-serif;
+    position: absolute;
+    right: 0;
+    top: 29px;
+    width: 200px;
+    z-index: 1000;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+.jcalculator .operation {
+    background: none repeat scroll 0 0 #191919;
+}
+.jcalculator span {
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 17px;
+    height: 39px;
+    line-height: 50px;
+    width: 66px;
+}
+body {
+    background: none  scroll 0 0 #f8f8f8;
+    /*background-image: url('./templates/img/1.jpg') ; */
+    color: #555;
+    font-family: "PT Sans",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    background-size: 100%;
 }
 </style>
 <div class="row">
+<div class="col-md-4">
+	&nbsp;
+</div>
+
+	
+<div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+<?$Content?>
+</div>
+<div class="col-md-2">
+	&nbsp;
+</div>
 	
 </div>
-<?$Content?>

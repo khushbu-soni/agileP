@@ -6,13 +6,14 @@ class page_settable extends Page{
 		$this->api->template->del('logo');
        	$this->api->template->del('Menu');
 		
-		$cols=$this->add('Columns');
-		$col1=$cols->addColumn(4);
+		$cols=$this->add('Columns')->removeClass('atk-row')->addClass('row');
+		// $col1=$cols->addColumn(4);
 		// $col1->add('View')->set('Welcome')->setStyle('display','block');
 		
 
-		$col2=$cols->addColumn(4);        
-		$frame=$col2->add('Frame')->setStyle(array('margin-left'=>'450px','margin-top'=>'50px','width'=>'100%','box-shadow'=>'10px 10px 6px gray','border'=>'2px solid skyblue'))->addClass('text-center')->set('Hi I am Second Column');
+		$col2=$cols->addColumn(12)->addClass('col-md-12 col-lg-12 col-xs-12 col-sm-12');        
+		$frame=$col2->add('Frame')->setStyle(array('margin'=>'0px -13px 0px -15px'));
+		$col2->setStyle(array('width'=>'100%','box-shadow'=>'10px 10px 6px gray','border'=>'2px solid skyblue'));
 		$frame->add('H3')->set('Set Table');
 		$form=$frame->add('Form');
 		$config=$this->add('Model_Configruartion');
