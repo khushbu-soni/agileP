@@ -42,6 +42,8 @@ class View_Box extends View {
         }
         return parent::render();
     }
+
+   
     function defaultTemplate(){
         return array('view/box');
     }

@@ -86,6 +86,16 @@ class View extends AbstractView {
         $this->template->trySetHTML('Content',$html);
         return $this;
     }
+
+     function isClicked($confirm=null){
+
+        $cl=$this->js('click')->univ();
+        if($confirm)$cl->confirm($confirm);
+
+        $cl->ajaxec($this->api->url(null,array($this->name=>'clicked')));
+
+        return isset($_GET[$this->name]);
+    }
     function defaultTemplate(){
         return array('htmlelement');
     }
