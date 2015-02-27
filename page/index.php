@@ -60,8 +60,8 @@ class page_index extends Page {
     		// if($change->isClicked())
     		// 	$this->api->forget('branch_id');
     		$change_btn->js('click',array($frame_branch->js()->show(),$frame->js()->hide()));
-    		
     	}
+    		//test 
 
     		
    		if($form->isSubmitted()){
