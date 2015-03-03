@@ -8,6 +8,10 @@
 		<link rel="stylesheet" type="text/css" href="<?template?>css/atk-main.css<?/?>" />
 		<link rel="stylesheet" type="text/css" href="<?template?>css/atk-custom.css<?/?>" />
 		<link rel="stylesheet" type="text/css" href="<?template?>css/bootstrap.css<?/?>" />
+		<link rel="stylesheet" type="text/css" href="<?template?>css/font-awesome.css<?/?>" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="<?template?>/js/bootstrap.min.js<?/?>"></script>
+		<script src="<?template?>/js/jquery.bxslider.js<?/?>"></script>
 		<?$js_include?>
 		<!--[if IE 8]>
 			<link rel="stylesheet" type="text/css" href="<?template?>css/ie8.css<?/?>"/>
@@ -21,6 +25,8 @@
 	</head>
 	<body>
 		<div id="atk-layout" class="atk-wrapper">
+		
+		<?header?>
 			<div id="header">
 				<?logo?><div id="atk-logo" class="ui-widget-header float-left"><a 
                                     href="<?page?>index<?/?>"><img src="<?template?>images/logo.png<?/?>" /></a></div><?/logo?>
@@ -29,9 +35,11 @@
 					<?/?>
 				</div>
 			</div>
+			<?/?>
 			<?$Content?>
 			<div id="atk-footer-guard"></div>
 		</div>
+
 		<?Footer?>
 		<div id="footer" class="atk-wrapper">
 			

@@ -33,9 +33,9 @@ class Frontend extends ApiFrontend {
 
         // If you wish to restrict access to your pages, use BasicAuth class
         $this->add('BasicAuth')
-            ->allow('demo','demo')
+            // ->allow('demo','demo')
             // use check() and allowPage for white-list based auth checking
-            //->check()
+            // ->check()
             ;
 
         // This method is executed for ALL the pages you are going to add,
@@ -49,6 +49,7 @@ class Frontend extends ApiFrontend {
         // it and place in a separate class
        
     }
+    
     
     
 }

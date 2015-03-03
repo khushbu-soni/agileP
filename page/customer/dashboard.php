@@ -17,7 +17,10 @@ class page_customer_dashboard extends Page{
        	if(!$c->loaded())
 	       		$this->js(true,$this->js()->univ()->errorMessage('Something is wrong Login again'))->univ()->redirect($this->api->url('customer'));//->execute();
        		
-
+          $this->add('View_Customer_Header',null,'header1');
+          $menu=$this->add('Model_Menu');
+          $featured_menu=$this->add('View_Customer_FeaturedMenu',null,'first_block');
+          $featured_menu->setModel($menu);
        		
 
 	}
